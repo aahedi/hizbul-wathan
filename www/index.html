@@ -1,24 +1,79 @@
 <!DOCTYPE html>
-<html lang='id'>
+<html>
 <head>
-<title>App</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="author" content="Hedi Herdiana">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-touch-fullscreen" content="yes">
-<link rel="stylesheet" href="hedi.css"/>
-<link rel="stylesheet" href="splash-screen.css"/>
-<link rel="stylesheet" href="tiny-slider/tiny-slider.css"/>
-<link rel="stylesheet" href="muicss/mui.min.css"/>
-<link rel="stylesheet" href="icon/typicons-fontello.min.css"/>
-</head>
-<body class="splash-screen">
-</body>
-<script src="tiny-slider/tiny-slider.js"></script>
-<script src="muicss/mui.min.js"></script>
-<script src="jquery.min.js"></script>
+<title>Selamat Datang</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<style>
+html{
+	color: #424A33;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family:"Arial";
+	overflow:hidden;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0bb2d+0,329426+100 */
+background: #a0bb2d; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #a0bb2d 0%, #329426 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a0bb2d), color-stop(100%,#329426)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #a0bb2d 0%,#329426 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #a0bb2d 0%,#329426 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #a0bb2d 0%,#329426 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #a0bb2d 0%,#329426 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0bb2d', endColorstr='#329426',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+.tengah{
+	width: 200px;height: 220px;position: absolute;top: 0;bottom:0;left:0;right: 0;margin: auto;
+}
+.logo{
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	background-size: 170px 150px;
+	background-image:url(image/logo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+*{ margin: 0; padding: 0;}
+
+@-ms-viewport{width:device-width;}
+
+</style>
 <script src="cordova.js"></script>
-<script src="sc.js"></script>
+</head>
+<script>function kategori(){window.location.replace("home.html")}function masuk(){setTimeout(function(){kategori()},7e3)}</script>
+<body onload="masuk();init();" oncontextmenu="false" ondragstart="false"><!--
+So we will have an animated background with 5 clouds moving across the screen.
+Steps: 
+1. create the clouds
+2. Animate them to move across the screen
+3. Stylize the clouds(can be done as step #2 also)
+-->
+
+
+<div class="tengah">
+<table width="200" cellspacing="10">
+	<tr>
+		<td><a href="home.html"><div class="logo"></div></a></td>
+	</tr>
+	<tr>
+		<td align="center">
+		<span align="center" style="font-size:9pt;font-weight:bold">GERAKAN KEPANDUAN</span>
+		<span align="center" style="font-size:16pt;font-weight:bold">HIZBUL WATHAN</span>
+		</td>
+	</tr>
+</table>
+</div>
+<!-- Thats the markup! -->
+<!-- That looks cool. We are done!! -->
+<script src='browser.js'></script>
+</body>
 </html>
